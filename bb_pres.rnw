@@ -1,7 +1,7 @@
 \documentclass[serif]{beamer}
 \usetheme{Boadilla}
 \usepackage{graphicx}
-\usepackage[draft]{animate}
+\usepackage[final]{animate}
 \usepackage{breqn}
 \usepackage{xcolor}
 \usepackage{booktabs}
@@ -114,7 +114,7 @@ sel.vec <- with(to.plo,
 to.plo <- to.plo[sel.vec, ]
 
 #y axis label for plots
-ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
 
 p1 <- ggplot(to.plo, aes(x = sal.grid, y = bt.md, group = dec.time, 
     colour = dec.time)) + 
@@ -139,7 +139,7 @@ dev.off()
 
 \begin{document}
 
-\title[Evaluating Trends in Gulf Estuaries]{\textbf{A Novel Approach for Evaluation of Water Quality Trends in Gulf Coast Estuaries}}
+\title[Trend Evaluation in Gulf Estuaries]{\textbf{A Novel Approach for Evaluation of Water Quality Trends in Gulf Coast Estuaries}}
 \author[Beck, Hagy, Murrell]{Marcus W. Beck\inst{1} \and James D. Hagy III\inst{2} \and Michael C. Murrell\inst{2}}
 
 \institute[EPA]{\inst{1} ORISE post-doc, USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \and \inst{2} USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division}
@@ -258,7 +258,7 @@ dev.off()
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
 <<annual_chl, echo = F, cache = T, message = F, fig.width = 8, fig.height = 4.5, fig.cap = 'Annual trends in chlorophyll for each bay segment.', out.width = '\\linewidth'>>=
 load('data/epc_tb_chl.RData')
-ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
 
 #get median values for chl by year and bay, merge with tb.chl on two columns
 rexp<-"^(\\w+)\\s?(.*)$"
@@ -295,7 +295,7 @@ pal <- wes.palette(name = 'Cavalcanti', type = 'continuous')
 
 load('data/epc_est.RData')
 
-ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
 
 to.plo<-epc.est[epc.est$seg=='Hillsborough Bay',]
 to.plo$yr.cut<-cut(as.numeric(to.plo$year),c(-Inf,1979,+Inf),labels=c('before','after'))
@@ -365,7 +365,7 @@ What affects our interpretation of chlorophyll response to nutrients?
 
 %%%%%%
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Given the observed changes over time and the available data -- Can we... 
+Given the observed changes over time and the available data -- Can we... \\~\\
 \begin{itemize}
 \item ...provide a natural history of water quality that is temporally consistent with drivers of change (i.e., context for trend evaluation)?
 \item ...characterize changes in extreme events in addition to describing the mean response?  
@@ -469,7 +469,7 @@ for(row_ex in row_exs){
   # predicted values to plot
   preds <- p.dat[1:row_ex, ]
   
-  ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+  ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
   p.dat.plo<-ggplot(p.dat,aes(x=Date,y=Chla_ugl)) +
     geom_point(aes(size=all.wt,colour=all.wt)) +
     scale_y_continuous(limit=c(0,4.5),name=ylabs) +
@@ -494,7 +494,7 @@ dev.off()
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
 How does weighted regression work?
 \begin{center}
-\animategraphics[controls,width=\linewidth]{12}{fig/wtex}{}{} %frame rate is 12 per/sec
+\animategraphics[controls,width=\linewidth]{10}{fig/wtex}{}{} %frame rate is 10 per/sec
 \end{center}
 \end{frame}
 
@@ -504,7 +504,7 @@ load('data/sal_nrm.RData')
 load('data/epc_est.RData')
 
 #plot of predicted and salinity normalized data, aggregated by year...
-ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
 
 quants1<-expression(paste(0.9))
 quants2<-expression(paste(0.1))
@@ -568,7 +568,7 @@ dev.off()
 
 %%%%%%
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Results can also be normalized by predictors -- salinity
+Results show temporally consistent trends over time
 \begin{figure}
 \centerline{\includegraphics[width = \textwidth]{fig/prdnrm.pdf}}
 \caption{Predicted and salinity-normalized annual chlorophyll by segment.}
@@ -612,7 +612,7 @@ to.plo <- to.plo[sel.vec, ]
 to.plo <- to.plo[to.plo$seg == 'Hillsborough Bay', ]
 
 #y axis label for plots
-ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
 
 p1 <- ggplot(to.plo, aes(x = sal.grid, y = bt.md, group = dec.time, 
     colour = dec.time)) + 
@@ -629,22 +629,22 @@ print(p1)
 dev.off()
 @
 
-%%%%%%
-\begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Because the model is dynamic, we have parameters describing the relationship of chlorophyll with other factors specific to different time periods \\~\\
-\begin{columns}[T]
-\begin{column}{0.45\textwidth}
-\centerline{\includegraphics[width = \textwidth]{fig/hill.pdf}}
-\end{column}
-\begin{column}{0.45\textwidth}
-\begin{itemize}
-\item Early period (blue) - point-sources
-\item Late period (red) - non-point sources
-\item Chlorophyll shows increasing response to freshwater input in recent years
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
+% %%%%%%
+% \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
+% Because the model is dynamic, we have parameters describing the relationship of chlorophyll with other factors specific to different time periods \\~\\
+% \begin{columns}[T]
+% \begin{column}{0.45\textwidth}
+% \centerline{\includegraphics[width = \textwidth]{fig/hill.pdf}}
+% \end{column}
+% \begin{column}{0.45\textwidth}
+% \begin{itemize}
+% \item Early period (blue) - point-sources
+% \item Late period (red) - non-point sources
+% \item Chlorophyll shows increasing response to freshwater input in recent years
+% \end{itemize}
+% \end{column}
+% \end{columns}
+% \end{frame}
 
 % figure used on title page
 <<title_fig2, echo = F, results = 'hide', message = F, cache = T>>=
@@ -682,19 +682,19 @@ sel.vec <- with(to.plo,
 to.plo <- to.plo[sel.vec, ]
 
 #y axis label for plots
-ylabs<-expression(paste('Chloropyhll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
 
 p1 <- ggplot(to.plo, aes(x = sal.grid, y = bt.md, group = dec.time, 
     colour = dec.time)) + 
   geom_line(size = 1) + 
   facet_wrap(~seg, scales = 'free', ncol = 4) + 
   scale_y_continuous(ylabs) +
-  scale_x_continuous(name=expression(italic(Sal[ff]))) +
+  scale_x_continuous(name='Fraction of freshwater') +
   theme_mine() +
   theme(legend.position = 'bottom') +
   scale_colour_gradientn('Year', colours = pal(5))
 
-pdf('fig/title_plo2.pdf', width = 8, height = 2.75, family = 'serif')
+pdf('fig/title_plo2.pdf', width = 9, height = 3, family = 'serif')
 print(p1)
 dev.off()
 @
@@ -706,8 +706,7 @@ What does this mean for Tampa Bay and other Gulf Coast estuaries?\\~\\
 \item Predictions followed observed chlorophyll -- but increased clarity in the description
 \item More detailed evaluation of trends allows greater insight into drivers of change\\~\\
 \end{itemize}
-The model parameters show us a picture...
-\centerline{\includegraphics[width = 0.9\textwidth]{fig/title_plo2.pdf}}
+\centerline{\includegraphics[width = \textwidth]{fig/title_plo2.pdf}}
 \end{frame}
 
 \section{Case 2: Improving metabolism estimates}
@@ -859,34 +858,105 @@ System Wide Monitoring Program, initiated in 1995 to provide continuous data at 
 \centerline{\includegraphics[width = 0.8\textwidth]{fig/NERRS_locations.png}}
 \end{frame}
 
+<<dtd_ani, cache = T, eval = F, echo = F, results = 'hide'>>=
+
+# continuous data
+load('wtreg/RKBMB_wtreg.RData')
+to_plo <- get('RKBMB_wtreg')
+tz <- attr(to_plo$DateTimeStamp, 'tzone')
+date_subs <- as.POSIXct(c('2011-05-23 0:0', '2011-05-30 0:0'), tz= tz)
+to_plo <- to_plo[to_plo$DateTimeStamp <= date_subs[2] & to_plo$DateTimeStamp >= date_subs[1], ]
+
+steps <- seq(1, nrow(to_plo), by = 2)
+to_plo <- to_plo[steps, ]
+
+#animations
+
+pdf('fig/detide_ani.pdf', height = 4.5, width = 9, family = 'serif')
+
+for(i in 1:nrow(to_plo)){
+    
+  cat(i, '\t')
+
+  rows <- seq(1, i)
+  ani_plo <- to_plo[rows, ]
+  
+  pt_plo <- ani_plo[rows[length(rows)], ]
+  
+  # DO 
+  do_plo <- melt(ani_plo, id.var = c('DateTimeStamp'), 
+    measure.var = c('DO_obs', 'DO_nrm'))
+  do_plo$variable <- factor(do_plo$variable, levels = c('DO_obs', 'DO_nrm'), 
+    labels = c('Observed', 'Detided'))
+  
+  p1 <- ggplot(ani_plo, aes(x = DateTimeStamp, y = Tide)) + 
+    geom_line(colour = pal(5)[1]) + 
+    geom_point(data = pt_plo, aes(x = DateTimeStamp, y = Tide), size = 3,
+      colour = pal(5)[1]) +
+    scale_y_continuous('Tidal height (m)', limits = c(0.2, 1.5)) +
+    scale_x_datetime(limits = date_subs) +
+    theme_mine() +
+    theme(axis.title.x = element_blank())
+  
+  pt_do_plo <- melt(pt_plo, id.var = c('DateTimeStamp'), 
+    measure.var = c('DO_obs', 'DO_nrm'))
+  pt_do_plo$variable <- factor(pt_do_plo$variable, levels = c('DO_obs', 'DO_nrm'), 
+    labels = c('Observed', 'Detided'))
+  
+  ylab<-expression(paste('DO (mg ',L^-1,')'))
+  p2 <- ggplot(do_plo, aes(x = DateTimeStamp, y = value, 
+      colour = variable)) + 
+    geom_line() +
+    geom_point(data = pt_do_plo, aes(x = DateTimeStamp), size = 3) +
+    scale_colour_manual('', values=pal(5)[c(3, 5)]) +
+    facet_wrap(~ variable, ncol = 1) +
+    scale_y_continuous(ylab, limits = c(1, 7)) +
+    scale_x_datetime(limits = date_subs) +
+    theme_mine() +
+    theme(legend.position = 'none', axis.title.x = element_blank())
+  
+  pA <- ggplotGrob(p1)
+  pB <- ggplotGrob(p2)
+  maxWidth = grid::unit.pmax(pA$widths[2:3], pB$widths[2:3])
+  pA$widths[2:3] <- as.list(maxWidth)
+  pB$widths[2:3] <- as.list(maxWidth)
+  
+  grid.arrange(pA, pB, ncol = 1, heights = c(1, 1.5))
+  
+}
+dev.off()
+
+# ani.options(qpdf = "C:/Users/mbeck/Desktop/qpdf-5.1.2-bin-mingw64/qpdf-5.1.2/bin/qpdf.exe")
+# qpdf("fig/detide_ani.pdf", output = "fig/detide_ani2.pdf")
+
+@
+
+%%%%%%
+\begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
+\begin{center}
+\animategraphics[controls,width=\linewidth]{50}{fig/detide_ani}{1}{169} %frame rate is 50 per/sec
+\end{center}
+\end{frame}
+
+\begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
 <<dtd_met, results = 'hold', cache = T, fig.height = 5.5, fig.width = 9, out.width = '\\textwidth', eval = T, echo = F, family = 'serif'>>=
+load('wtreg/RKBMB_wtreg.RData')
+to_plo <- get('RKBMB_wtreg')
 
-sites <- c('APACP', 'GNDBL', 'MARMB', 'RKBMB', 'WKBWB')
-# for(site in sites){
-#   load(paste0('M:/wq_models/SWMP/raw/rproc/proc5/', site, '.RData'))
-#   dat <- get(site)
-#   dat$year <- strftime(dat$DateTimeStamp, '%Y')
-#   dat <- dat[dat$year %in% '2012', ]
-#   
-#   assign(site, dat)
-#   save(list = site, file = paste0('data/', site, '.RData'))
-# }
-#   
-
-
-load('data/sapdc_met.RData')
-met_plo <- melt(sapdc_met, id.var = 'Date', measure.var = c('Pg', 'Rt', 'Pg_dtd', 'Rt_dtd'))
+load('data/met_ls.RData')
+met_ls <- met_ls[['RKBMB_wtreg.RData']]
+met_plo <- melt(met_ls, id.var = 'Date', measure.var = c('Pg', 'Rt', 'Pg_dtd', 'Rt_dtd'))
 met_plo$type <- rep('Observed', length = nrow(met_plo))
 met_plo$type[grep('dtd$', met_plo$variable)] <- 'Detided'
 met_plo$variable <- gsub('_dtd$', '', met_plo$variable)
-met_plo$type<- factor(met_plo$type, levels = c('Observed', 'Detided'), labels = c('Observed', 'Detided'))
 met_plo$variable <- factor(met_plo$variable, levels = c('Pg', 'Rt'), labels = c('Production', 'Respiration'))
+met_plo$type<- factor(met_plo$type, levels = c('Observed', 'Detided'), labels = c('Observed', 'Detided'))
 
 ylab<-expression(paste('DO (mg ',L^-1,')'))
 p1 <- ggplot(to_plo, aes(x = DateTimeStamp)) + 
   geom_line(aes(y = DO_obs, colour = 'Observed')) +
   geom_line(aes(y = DO_nrm, colour = 'Detided')) +
-  scale_colour_manual('', values=pal(5)[c(2, 5)]) +
+  scale_colour_manual('', values=pal(5)[c(3, 5)]) +
   scale_y_continuous(ylab) +
   theme_mine() +
   theme(legend.position = 'top', axis.title.x = element_blank())
@@ -905,135 +975,60 @@ grid.arrange(p1, p2, ncol = 1, heights = c(1.5,2))
 @
 \end{frame}
 
+\section{Conclusions}
+
 %%%%%%
-\begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
-Metabolism was estimated using observed and `detided' DO time series
+\begin{frame}{\textbf{Conclusions}}
+The analysis of water quality will continue to require the use of novel techniques, such as weighted regression\\~\\
+These needs are motivated by: \\~\\
+\begin{itemize}
+\item The continued relevance of stressors that influence ecosystem conditions \\~\\
+\item Our increasing ability to gather raw, uninterpreted data \\~\\
+\end{itemize}
+Our methods must include a clear definition of \emtxt{trend} in the context of drivers of change
 \end{frame}
 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% \vspace{-0.1in}
-% <<dtd_met, results = 'hold', cache = T, fig.height = 5.5, fig.width = 9, out.width = '\\textwidth', eval = T, echo = F, family = 'serif'>>=
-% load('data/SAPDC_wtreg_12.RData')
-% to_plo <- get('SAPDC_wtreg_12')
-% 
-% load('data/sapdc_met.RData')
-% met_plo <- melt(sapdc_met, id.var = 'Date', measure.var = c('Pg', 'Rt', 'Pg_dtd', 'Rt_dtd'))
-% met_plo$type <- rep('Observed', length = nrow(met_plo))
-% met_plo$type[grep('dtd$', met_plo$variable)] <- 'Detided'
-% met_plo$variable <- gsub('_dtd$', '', met_plo$variable)
-% met_plo$type<- factor(met_plo$type, levels = c('Observed', 'Detided'), labels = c('Observed', 'Detided'))
-% met_plo$variable <- factor(met_plo$variable, levels = c('Pg', 'Rt'), labels = c('Production', 'Respiration'))
-% 
-% ylab<-expression(paste('DO (mg ',L^-1,')'))
-% p1 <- ggplot(to_plo, aes(x = DateTimeStamp)) + 
-%   geom_line(aes(y = DO_obs, colour = 'Observed')) +
-%   geom_line(aes(y = DO_nrm, colour = 'Detided')) +
-%   scale_colour_manual('', values=pal(5)[c(2, 5)]) +
-%   scale_y_continuous(ylab) +
-%   theme_mine() +
-%   theme(legend.position = 'top', axis.title.x = element_blank())
-% 
-% ylab<-expression(paste('mmol ', O[2],' ', m^-2,' ', d^-1))
-% p2 <- ggplot(met_plo, aes(x = Date, y = value, group = variable, colour = variable)) + 
-%   geom_line() +
-%   geom_point() +
-%   facet_wrap(~type, ncol = 1) + 
-%   scale_colour_manual('', values=pal(5)[c(1, 3)]) +
-%   scale_y_continuous(ylab) +
-%   theme_mine() +
-%   theme(legend.position = 'top', axis.title.x = element_blank())
-% 
-% grid.arrange(p1, p2, ncol = 1, heights = c(1.5,2))
-% @
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% \onslide<+->
-% Tools in the SWMPr package (or that will be included) have facilitated comparative analyses of millions of water quality records from NERRS \\~\\
-% These tools can help improve our understanding of nutrient pollution and eutrophication \\~\\
-% \onslide<+->
-% Potential for many other applications... actively being developed \\~\\
-% \begin{columns}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/Rlogo.png}}
-% \end{column}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/RStudio.png}}
-% \end{column}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/knit-logo.png}}
-% \end{column}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/octocat.png}}
-% \end{column}
-% \end{columns}
-% \end{frame}
-% 
-% \section{Conclusions}
-% %%%%%%
-% \begin{frame}{\textbf{Conclusions}}
-% The analysis of water quality will continue to require the use of novel tecniques to interpret the data \\~\\
-% These needs are motivated by: \\~\\
-% \begin{itemize}
-% \item The continued relevance of stressors that influence ecosystem conditions \\~\\
-% \item Our increasing ability to gather raw, uninterpreted data \\~\\
-% \end{itemize}
-% Our methods must be able to make sense of \alert{historical trends}, as well as predict \alert{future conditions}
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Conclusions}}
-% Our ability to \alert{share}, \alert{reproduce}, and \alert{collaborate} is essential \\~\\
-% \alert{SWMPr package:} \href{https://github.com/fawda123/SWMPr}{https://github.com/fawda123/SWMPr} \\~\\
-% \alert{Seagrass applications:} \href{https://beckmw.shinyapps.io/sg_depth}{https://beckmw.shinyapps.io/sg\_depth} \\~\\
-% \alert{Ecosystem metabolism and detiding:} \href{http://spark.rstudio.com/beckmw/detiding_cases/}{http://spark.rstudio.com/beckmw/detiding\_cases/} \\~\\
-% \alert{This presentation:} \href{https://github.com/fawda123/wqtrends_pres}{https://github.com/fawda123/wqtrends\_pres}
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}
-% Acknowledgments:\\~\\
-% \begin{columns}
-% \begin{column}{0.6\textwidth}
-% {\footnotesize
-% Research staff and employees at USEPA Gulf Ecology Division - especially J. Hagy, M. Murrell\\~\\
-% Field staff and data managers at Hillsborough County Environmental Protection Commission\\~\\
-% Research coordinators, technicians, and field staff of the National Estuarine Research Reserve System}\\~\\
-% \end{column}
-% \begin{column}{0.3\textwidth}
-% \vspace{-0.2in}
-% \begin{center}
-% {\tiny
-% Wes Anderson Zissou color theme borrowed and adapted from \href{https://github.com/karthik/wesanderson}{github.com/karthik}\\~\\
-% \includegraphics[width=0.55\linewidth]{fig/zissou.png}\\~\\
-% \vspace{-0.15in}
-% \scalebox{0.7}{\hbox{\tiny Image credit:\thinspace{\tiny \href{http://stephenmorrow.deviantart.com/}{Stephen Morrow}}}}}
-% \end{center}
-% \end{column}
-% \end{columns}
-% \vfill
-% Funding sources and contact:\\~\\
-% \begin{columns}
-% \begin{column}{0.5\textwidth}
-% \centerline{\includegraphics[width=0.4\linewidth]{fig/epa_logo.png}}
-% \end{column}
-% \begin{column}{0.5\textwidth}
-% \scriptsize
-% \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
-% Phone: 8509342480 \\~\\
-% Github: \href{https://github.com/fawda123/}{github.com/fawda123/} \\~\\
-% Blog: \href{http://beckmw.wordpress.com/}{beckmw.wordpress.com/}
-% \end{column}
-% \end{columns}
-% \vspace{0.2in}
-% \end{frame}
+%%%%%%
+\begin{frame}
+Acknowledgments:\\~\\
+\begin{columns}
+\begin{column}{0.6\textwidth}
+{\footnotesize
+Field staff and data managers at Hillsborough County Environmental Protection Commission, Tampa Bay Estuary Program\\~\\
+Research coordinators, technicians, and field staff of the National Estuarine Research Reserve System}\\~\\
+\end{column}
+\begin{column}{0.3\textwidth}
+\vspace{-0.2in}
+\begin{center}
+{\tiny
+Wes Anderson Cavalcanti color theme borrowed and adapted from \href{https://github.com/karthik/wesanderson}{github.com/karthik}\\~\\
+\includegraphics[width=0.55\linewidth]{fig/cavalcanti.jpg}\\~\\
+\vspace{-0.15in}
+\scalebox{0.7}{\hbox{\tiny Image credit:\thinspace{\tiny \href{https://m1.behance.net/}{https://m1.behance.net/}}}}}
+\end{center}
+\end{column}
+\end{columns}
+\vfill
+Funding sources and contact:\\~\\
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width=0.4\linewidth]{fig/epa_logo.png}}
+\end{column}
+\begin{column}{0.5\textwidth}
+\scriptsize
+\href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
+Phone: 8509342480 \\~\\
+Github: \href{https://github.com/fawda123/}{github.com/fawda123/} \\~\\
+Blog: \href{http://beckmw.wordpress.com/}{beckmw.wordpress.com/}
+\end{column}
+\end{columns}
+\vspace{0.2in}
+\end{frame}
 
 %%%%%%
 \section{References}
 \begin{frame}[allowframebreaks,t]{\textbf{References}}
-\tiny
+\footnotesize
 \setbeamertemplate{bibliography item}{}
 \bibliographystyle{apalike_mine}
 \bibliography{ref_diss}

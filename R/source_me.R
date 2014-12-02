@@ -78,7 +78,7 @@ registerDoParallel(cl)
 # start time
 strt <- Sys.time()
 
-cases <- list.files(path = paste0(getwd(), '/wtreg/'), pattern = '_wtreg_')
+cases <- list.files(path = paste0(getwd(), '/wtreg/'), pattern = '_wtreg')
 
 # metab ests as list
 met_ls <- foreach(case = cases) %dopar% {
@@ -93,7 +93,7 @@ met_ls <- foreach(case = cases) %dopar% {
   # get data for eval
   load(paste0('wtreg/', case))
   nm <- gsub('.RData', '', case)
-  stat <- gsub('_wtreg_[0-9]+$', '', nm)
+  stat <- gsub('_wtreg', '', nm)
   dat_in <- get(nm)
   
   # get metab for obs DO

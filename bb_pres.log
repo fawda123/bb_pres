@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  1 DEC 2014 15:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  2 DEC 2014 16:49
 entering extended mode
 **bb_pres.tex
 (M:\presentations\bb_pres\bb_pres.tex
@@ -770,7 +770,7 @@ eamerouterthemeinfolines.sty
 Package: beamerouterthemeinfolines 2012/10/16  (rcs-revision 51a8c72084af)
 ))
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\animate\animate.sty
-Package: animate 2013/09/24 PDF animations from files and inline graphics
+Package: animate 2014/11/11 PDF animations from files and inline graphics
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
@@ -791,40 +791,59 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count155
 \calc@Cskip=\skip60
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\atenddvi.sty"
+Package: atenddvi 2007/04/17 v1.1 At end DVI hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
+Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-base.sty"
+Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package zref Info: New property list: main on input line 759.
+Package zref Info: New property: default on input line 760.
+Package zref Info: New property: page on input line 761.
+)
+\c@abspage=\count156
+Package zref Info: New property: abspage on input line 62.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-lastpage.sty"
+Package: zref-lastpage 2012/04/04 v2.24 Module lastpage for zref (HO)
+Package zref Info: New property list: LastPage on input line 55.
+))
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\animate\animfp.sty
 Package: animfp 2009/07/23 fixed point addition for animate.sty
-\afp@xs=\count156
-\afp@xia=\count157
-\afp@xib=\count158
-\afp@xfa=\count159
-\afp@xfb=\count160
-\afp@rega=\count161
-\afp@regb=\count162
-\afp@regs=\count163
+\afp@xs=\count157
+\afp@xia=\count158
+\afp@xib=\count159
+\afp@xfa=\count160
+\afp@xfb=\count161
+\afp@rega=\count162
+\afp@regb=\count163
+\afp@regs=\count164
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count164
+\scratchcounter=\count165
 \scratchdimen=\dimen191
 \scratchbox=\box53
-\nofMPsegments=\count165
-\nofMParguments=\count166
+\nofMPsegments=\count166
+\nofMParguments=\count167
 \everyMPshowfont=\toks40
-\MPscratchCnt=\count167
+\MPscratchCnt=\count168
 \MPscratchDim=\dimen192
-\MPnumerator=\count168
-\makeMPintoPDFobject=\count169
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
 \everyMPtoPDFconversion=\toks41
 )
-\@anim@@ocgs=\count170
-\@anim@@offocgs=\count171
 \@anim@box=\box54
+\@anim@measbox=\box55
 \@anim@tmpdima=\dimen193
 \@anim@tmpdimb=\dimen194
+\@anim@ocnum=\count171
 \@anim@num=\count172
 \@anim@curframe=\count173
 \@anim@curframe@zb=\count174
-\@anim@resize=\count175
+\@anim@resizeflags=\count175
 \@anim@skipfram=\count176
 \@anim@mulframecnt=\count177
 \@anim@@tmlnfile=\read2
@@ -835,6 +854,7 @@ Package: animfp 2009/07/23 fixed point addition for animate.sty
 \@anim@curfield=\count182
 \@anim@begin=\toks42
 \@anim@end=\toks43
+\@anim@@resizeflags=\count183
 ) (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\mh\breqn.sty
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3names.sty
@@ -844,7 +864,7 @@ Package: l3bootstrap 2013/07/28 v4581 L3 Experimental bootstrap code
 Package: l3names 2012/12/07 v4346 L3 Namespace for primitives
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count183
+\et@xins=\count184
 )
 Package: expl3 2013/07/28 v4582 L3 Experimental code bundle wrapper
 
@@ -862,18 +882,18 @@ Package: l3seq 2013/07/28 v4581 L3 Sequences and stacks
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3int.sty
 Package: l3int 2013/07/28 v4581 L3 Integers
-\c_max_int=\count184
-\l_tmpa_int=\count185
-\l_tmpb_int=\count186
-\g_tmpa_int=\count187
-\g_tmpb_int=\count188
+\c_max_int=\count185
+\l_tmpa_int=\count186
+\l_tmpb_int=\count187
+\g_tmpa_int=\count188
+\g_tmpb_int=\count189
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3quark.sty
 Package: l3quark 2013/07/21 v4564 L3 Quarks
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3prg.sty
 Package: l3prg 2013/07/28 v4581 L3 Control structures
-\g__prg_map_int=\count189
+\g__prg_map_int=\count190
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3clist.sty
 Package: l3clist 2013/07/28 v4581 L3 Comma separated lists
@@ -889,11 +909,11 @@ Package: l3msg 2013/07/28 v4581 L3 Messages
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3file.sty
 Package: l3file 2013/07/28 v4581 L3 File and I/O operations
-\l_iow_line_count_int=\count190
-\l__iow_target_count_int=\count191
-\l__iow_current_line_int=\count192
-\l__iow_current_word_int=\count193
-\l__iow_current_indentation_int=\count194
+\l_iow_line_count_int=\count191
+\l__iow_target_count_int=\count192
+\l__iow_current_line_int=\count193
+\l__iow_current_word_int=\count194
+\l__iow_current_indentation_int=\count195
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3skip.sty
 Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
@@ -918,33 +938,33 @@ Package: l3skip 2013/07/28 v4581 L3 Dimensions and skips
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3keys.sty
 Package: l3keys 2013/07/28 v4581 L3 Experimental key-value interfaces
-\g__keyval_level_int=\count195
-\l_keys_choice_int=\count196
+\g__keyval_level_int=\count196
+\l_keys_choice_int=\count197
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3fp.sty
 Package: l3fp 2013/07/09 v4521 L3 Floating points
-\c__fp_leading_shift_int=\count197
-\c__fp_middle_shift_int=\count198
-\c__fp_trailing_shift_int=\count199
-\c__fp_big_leading_shift_int=\count200
-\c__fp_big_middle_shift_int=\count201
+\c__fp_leading_shift_int=\count198
+\c__fp_middle_shift_int=\count199
+\c__fp_trailing_shift_int=\count200
+\c__fp_big_leading_shift_int=\count201
 Normal \count register pool exhausted, switching to extended pool.
-\c__fp_big_trailing_shift_int=\count277
-\c__fp_Bigg_leading_shift_int=\count278
-\c__fp_Bigg_middle_shift_int=\count279
-\c__fp_Bigg_trailing_shift_int=\count280
+\c__fp_big_middle_shift_int=\count277
+\c__fp_big_trailing_shift_int=\count278
+\c__fp_Bigg_leading_shift_int=\count279
+\c__fp_Bigg_middle_shift_int=\count280
+\c__fp_Bigg_trailing_shift_int=\count281
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3box.sty
 Package: l3box 2013/07/28 v4581 L3 Experimental boxes
-\c_empty_box=\box55
-\l_tmpa_box=\box56
-\l_tmpb_box=\box57
-\g_tmpa_box=\box58
-\g_tmpb_box=\box59
+\c_empty_box=\box56
+\l_tmpa_box=\box57
+\l_tmpb_box=\box58
+\g_tmpa_box=\box59
+\g_tmpb_box=\box60
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3coffins.sty
 Package: l3coffins 2012/09/09 v4212 L3 Coffin code layer
-\l__coffin_internal_box=\box60
+\l__coffin_internal_box=\box61
 \l__coffin_internal_dim=\dimen201
 Normal \dimen register pool exhausted, switching to extended pool.
 \l__coffin_offset_x_dim=\dimen256
@@ -953,14 +973,14 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \l__coffin_y_dim=\dimen259
 \l__coffin_x_prime_dim=\dimen260
 \l__coffin_y_prime_dim=\dimen261
-\c_empty_coffin=\box61
-\l__coffin_aligned_coffin=\box62
-\l__coffin_aligned_internal_coffin=\box63
-\l_tmpa_coffin=\box64
-\l_tmpb_coffin=\box65
-\l__coffin_display_coffin=\box66
-\l__coffin_display_coord_coffin=\box67
-\l__coffin_display_pole_coffin=\box68
+\c_empty_coffin=\box62
+\l__coffin_aligned_coffin=\box63
+\l__coffin_aligned_internal_coffin=\box64
+\l_tmpa_coffin=\box65
+\l_tmpb_coffin=\box66
+\l__coffin_display_coffin=\box67
+\l__coffin_display_coord_coffin=\box68
+\l__coffin_display_pole_coffin=\box69
 \l__coffin_display_offset_dim=\dimen262
 \l__coffin_display_x_dim=\dimen263
 \l__coffin_display_y_dim=\dimen264
@@ -970,8 +990,8 @@ Package: l3color 2012/08/29 v4156 L3 Experimental color support
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3luatex.sty
 Package: l3luatex 2013/07/28 v4581 L3 Experimental LuaTeX-specific functions
-\g__cctab_allocate_int=\count281
-\g__cctab_stack_int=\count282
+\g__cctab_allocate_int=\count282
+\g__cctab_stack_int=\count283
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3candidates.sty
 Package: l3candidates 2013/07/24 v4576 L3 Experimental additions to l3kernel
@@ -983,7 +1003,7 @@ Package: l3candidates 2013/07/24 v4576 L3 Experimental additions to l3kernel
 \l__box_bottom_new_dim=\dimen270
 \l__box_left_new_dim=\dimen271
 \l__box_right_new_dim=\dimen272
-\l__box_internal_box=\box69
+\l__box_internal_box=\box70
 \l__coffin_bounding_shift_dim=\dimen273
 \l__coffin_left_corner_dim=\dimen274
 \l__coffin_right_corner_dim=\dimen275
@@ -1032,8 +1052,8 @@ LaTeX Info: Redefining \scriptstyle on input line 85.
 LaTeX Info: Redefining \scriptscriptstyle on input line 87.
 LaTeX Info: Redefining \genfrac on input line 121.
 ))
-\inf@bad=\count283
-\maxint=\count284
+\inf@bad=\count284
+\maxint=\count285
 \listwidth=\dimen280
 \eqnumsep=\dimen281
 \eqmargin=\dimen282
@@ -1044,28 +1064,28 @@ LaTeX Info: Redefining \genfrac on input line 121.
 \eqdelimoffset=\muskip19
 \eqindentstep=\dimen284
 \eqstyle=\toks44
-\eqbreakdepth=\count285
-\eqinterlinepenalty=\count286
-\intereqpenalty=\count287
+\eqbreakdepth=\count286
+\eqinterlinepenalty=\count287
+\intereqpenalty=\count288
 \intereqskip=\skip69
-\prerelpenalty=\count288
-\prebinoppenalty=\count289
+\prerelpenalty=\count289
+\prebinoppenalty=\count290
 \Dmedmuskip=\muskip20
 \Dthickmuskip=\muskip21
 \eqleftskip=\skip70
 \eqrightskip=\skip71
 \eq@vspan=\skip72
 \eq@binoffset=\muskip22
-\EQ@box=\box70
-\EQ@copy=\box71
-\EQ@numbox=\box72
+\EQ@box=\box71
+\EQ@copy=\box72
+\EQ@numbox=\box73
 \eq@wdNum=\dimen285
-\GRP@numbox=\box73
+\GRP@numbox=\box74
 \grp@wdNum=\dimen286
-\eq@lines=\count290
-\eq@curline=\count291
-\eq@badness=\count292
-\EQ@vims=\count293
+\eq@lines=\count291
+\eq@curline=\count292
+\eq@badness=\count293
+\EQ@vims=\count294
 \eq@dp=\dimen287
 \eq@wdL=\dimen288
 \eq@wdT=\dimen289
@@ -1082,16 +1102,16 @@ LaTeX Info: Redefining \genfrac on input line 121.
 \eq@hshift=\dimen300
 \eq@given@sidespace=\dimen301
 \mathindent=\dimen302
-\eq@final@linecount=\count294
+\eq@final@linecount=\count295
 \eq@wdR=\dimen303
 \EQ@continue=\toks45
-\lr@level=\count295
+\lr@level=\count296
 \GRP@queue=\toks46
-\GRP@box=\box74
-\GRP@wholebox=\box75
+\GRP@box=\box75
+\GRP@wholebox=\box76
 \darraycolsep=\skip73
-\cur@row=\count296
-\cur@col=\count297
+\cur@row=\count297
+\cur@col=\count298
 \conditionsep=\skip74
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
@@ -1106,12 +1126,12 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen311
 \cmidrulekern=\dimen312
 \defaultaddspace=\dimen313
-\@cmidla=\count298
-\@cmidlb=\count299
+\@cmidla=\count299
+\@cmidlb=\count300
 \@aboverulesep=\dimen314
 \@belowrulesep=\dimen315
-\@thisruleclass=\count300
-\@lastruleclass=\count301
+\@thisruleclass=\count301
+\@lastruleclass=\count302
 \@thisrulewidth=\dimen316
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
@@ -1121,7 +1141,7 @@ Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulesha
 pes.code.tex
 File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
-\pgfnodeparttextbox=\box76
+\pgfnodeparttextbox=\box77
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplo
 t.code.tex
@@ -1156,7 +1176,7 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
-\pgf@plot@mark@count=\count302
+\pgf@plot@mark@count=\count303
 \pgfplotmarksize=\dimen321
 )
 \tikz@lastx=\dimen322
@@ -1165,21 +1185,21 @@ File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \tikz@lastysaved=\dimen325
 \tikzleveldistance=\dimen326
 \tikzsiblingdistance=\dimen327
-\tikz@figbox=\box77
-\tikz@tempbox=\box78
-\tikztreelevel=\count303
-\tikznumberofchildren=\count304
-\tikznumberofcurrentchild=\count305
-\tikz@fig@count=\count306
+\tikz@figbox=\box78
+\tikz@tempbox=\box79
+\tikztreelevel=\count304
+\tikznumberofchildren=\count305
+\tikznumberofcurrentchild=\count306
+\tikz@fig@count=\count307
 
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
-\pgfmatrixcurrentrow=\count307
-\pgfmatrixcurrentcolumn=\count308
-\pgf@matrix@numberofcolumns=\count309
+\pgfmatrixcurrentrow=\count308
+\pgfmatrixcurrentcolumn=\count309
+\pgf@matrix@numberofcolumns=\count310
 )
-\tikz@expandcount=\count310
+\tikz@expandcount=\count311
 
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
 ibraries\tikzlibrarytopaths.code.tex
@@ -1196,11 +1216,11 @@ orations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen330
 \pgfdecoratedinputsegmentremainingdistance=\dimen331
 \pgf@decorate@distancetomove=\dimen332
-\pgf@decorate@repeatstate=\count311
+\pgf@decorate@repeatstate=\count312
 \pgfdecorationsegmentamplitude=\dimen333
 \pgfdecorationsegmentlength=\dimen334
 )
-\tikz@lib@dec@box=\box79
+\tikz@lib@dec@box=\box80
 )
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
 s\pgflibrarydecorations.pathreplacing.code.tex))
@@ -1251,26 +1271,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
 libraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box80
-\pgfnodeparttwobox=\box81
-\pgfnodepartthreebox=\box82
-\pgfnodepartfourbox=\box83
-\pgfnodeparttwentybox=\box84
-\pgfnodepartnineteenbox=\box85
-\pgfnodeparteighteenbox=\box86
-\pgfnodepartseventeenbox=\box87
-\pgfnodepartsixteenbox=\box88
-\pgfnodepartfifteenbox=\box89
-\pgfnodepartfourteenbox=\box90
-\pgfnodepartthirteenbox=\box91
-\pgfnodeparttwelvebox=\box92
-\pgfnodepartelevenbox=\box93
-\pgfnodeparttenbox=\box94
-\pgfnodepartninebox=\box95
-\pgfnodeparteightbox=\box96
-\pgfnodepartsevenbox=\box97
-\pgfnodepartsixbox=\box98
-\pgfnodepartfivebox=\box99
+\pgfnodepartlowerbox=\box81
+\pgfnodeparttwobox=\box82
+\pgfnodepartthreebox=\box83
+\pgfnodepartfourbox=\box84
+\pgfnodeparttwentybox=\box85
+\pgfnodepartnineteenbox=\box86
+\pgfnodeparteighteenbox=\box87
+\pgfnodepartseventeenbox=\box88
+\pgfnodepartsixteenbox=\box89
+\pgfnodepartfifteenbox=\box90
+\pgfnodepartfourteenbox=\box91
+\pgfnodepartthirteenbox=\box92
+\pgfnodeparttwelvebox=\box93
+\pgfnodepartelevenbox=\box94
+\pgfnodeparttenbox=\box95
+\pgfnodepartninebox=\box96
+\pgfnodeparteightbox=\box97
+\pgfnodepartsevenbox=\box98
+\pgfnodepartsixbox=\box99
+\pgfnodepartfivebox=\box100
 )))
 (C:\Users\mbeck\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
 ibraries\tikzlibraryarrows.code.tex
@@ -1314,22 +1334,22 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen341
 \caption@hangindent=\dimen342
 )
-\c@ContinuedFloat=\count312
+\c@ContinuedFloat=\count313
 Package caption Info: beamer document class.
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 )
-\c@KVtest=\count313
+\c@KVtest=\count314
 \sf@farskip=\skip75
 \sf@captopadj=\dimen343
 \sf@capskip=\skip76
 \sf@nearskip=\skip77
-\c@subfigure=\count314
-\c@subfigure@save=\count315
-\c@depth=\count316
-\c@subtable=\count317
-\c@subtable@save=\count318
+\c@subfigure=\count315
+\c@subfigure@save=\count316
+\c@depth=\count317
+\c@subtable=\count318
+\c@subtable@save=\count319
 \sf@top=\skip78
 \sf@bottom=\skip79
 )
@@ -1388,7 +1408,7 @@ LaTeX Font Info:    ... okay on input line 96.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box100
+\AtBeginShipoutBox=\box101
 Package hyperref Info: Link coloring OFF on input line 96.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1397,7 +1417,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count319
+\c@section@level=\count320
 )
 LaTeX Info: Redefining \ref on input line 96.
 LaTeX Info: Redefining \pageref on input line 96.
@@ -1451,13 +1471,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 110.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<fig/title_plo.pdf, id=48, 939.51pt x 180.675pt>
+<fig/title_plo.pdf, id=50, 939.51pt x 180.675pt>
 File: fig/title_plo.pdf Graphic file (type pdf)
  <use fig/title_plo.pdf>
 Package pdftex.def Info: fig/title_plo.pdf used on input line 110.
 (pdftex.def)             Requested size: 308.06367pt x 59.24248pt.
 
-<fig/back_tmp.pdf, id=49, 505.89pt x 505.89pt>
+<fig/back_tmp.pdf, id=51, 505.89pt x 505.89pt>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
 Package pdftex.def Info: fig/back_tmp.pdf used on input line 110.
@@ -1477,7 +1497,7 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 124.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [2
 
-] <fig/theo.pdf, id=84, 361.35pt x 234.8775pt>
+] <fig/theo.pdf, id=86, 361.35pt x 234.8775pt>
 File: fig/theo.pdf Graphic file (type pdf)
 
 <use fig/theo.pdf>
@@ -1497,7 +1517,7 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 148.
  [4
 
 ]
-<fig/tb_map.pdf, id=104, 469.755pt x 469.755pt>
+<fig/tb_map.pdf, id=106, 469.755pt x 469.755pt>
 File: fig/tb_map.pdf Graphic file (type pdf)
  <use fig/tb_map.pdf>
 Package pdftex.def Info: fig/tb_map.pdf used on input line 170.
@@ -1510,7 +1530,7 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 170.
  [5
 
  <M:/presentations/bb_pres/fig/tb_map.pdf>]
-<fig/annual_chl.pdf, id=122, 578.16pt x 325.215pt>
+<fig/annual_chl.pdf, id=124, 578.16pt x 325.215pt>
 File: fig/annual_chl.pdf Graphic file (type pdf)
  <use fig/annual_chl.pdf>
 Package pdftex.def Info: fig/annual_chl.pdf used on input line 185.
@@ -1526,14 +1546,14 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 185.
  [6
 
  <M:/presentations/bb_pres/fig/annual_chl.pdf>]
-<fig/salmoyr.pdf, id=141, page=1, 274.02374pt x 230.8625pt>
+<fig/salmoyr.pdf, id=143, page=1, 274.02374pt x 230.8625pt>
 File: fig/salmoyr.pdf Graphic file (type pdf)
 
 <use fig/salmoyr.pdf, page 1>
 Package pdftex.def Info: fig/salmoyr.pdf, page1 used on input line 214.
 (pdftex.def)             Requested size: 157.45813pt x 124.70282pt.
 
-<fig/salmoyr.pdf, id=143, page=2, 274.02374pt x 230.8625pt>
+<fig/salmoyr.pdf, id=145, page=2, 274.02374pt x 230.8625pt>
 File: fig/salmoyr.pdf Graphic file (type pdf)
 
 <use fig/salmoyr.pdf, page 2>
@@ -1565,7 +1585,83 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 233.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [9
 
-]
+] <M:/presentations/bb_pres/fig/wtex.pdf> <1> <M:/presentations/bb_pres/fig/wte
+x.pdf> <2> <M:/presentations/bb_pres/fig/wtex.pdf>
+<3> <M:/presentations/bb_pres/fig/wtex.pdf> <4> <M:/presentations/bb_pres/fig/w
+tex.pdf> <5> <M:/presentations/bb_pres/fig/wtex.pdf> <6> <M:/presentations/bb_p
+res/fig/wtex.pdf> <7> <M:/presentations/bb_pres/fig/wtex.pdf> <8> <M:/presentat
+ions/bb_pres/fig/wtex.pdf> <9> <M:/presentations/bb_pres/fig/wtex.pdf> <10> <M:
+/presentations/bb_pres/fig/wtex.pdf> <11> <M:/presentations/bb_pres/fig/wtex.pd
+f> <12> <M:/presentations/bb_pres/fig/wtex.pdf> <13> <M:/presentations/bb_pres/
+fig/wtex.pdf> <14> <M:/presentations/bb_pres/fig/wtex.pdf> <15> <M:/presentatio
+ns/bb_pres/fig/wtex.pdf> <16> <M:/presentations/bb_pres/fig/wtex.pdf> <17> <M:/
+presentations/bb_pres/fig/wtex.pdf> <18> <M:/presentations/bb_pres/fig/wtex.pdf
+> <19> <M:/presentations/bb_pres/fig/wtex.pdf> <20> <M:/presentations/bb_pres/f
+ig/wtex.pdf> <21> <M:/presentations/bb_pres/fig/wtex.pdf> <22> <M:/presentation
+s/bb_pres/fig/wtex.pdf> <23> <M:/presentations/bb_pres/fig/wtex.pdf> <24> <M:/p
+resentations/bb_pres/fig/wtex.pdf> <25> <M:/presentations/bb_pres/fig/wtex.pdf>
+<26> <M:/presentations/bb_pres/fig/wtex.pdf> <27> <M:/presentations/bb_pres/fig
+/wtex.pdf> <28> <M:/presentations/bb_pres/fig/wtex.pdf> <29> <M:/presentations/
+bb_pres/fig/wtex.pdf> <30> <M:/presentations/bb_pres/fig/wtex.pdf> <31> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <32> <M:/presentations/bb_pres/fig/wtex.pdf>
+<33> <M:/presentations/bb_pres/fig/wtex.pdf> <34> <M:/presentations/bb_pres/fig
+/wtex.pdf> <35> <M:/presentations/bb_pres/fig/wtex.pdf> <36> <M:/presentations/
+bb_pres/fig/wtex.pdf> <37> <M:/presentations/bb_pres/fig/wtex.pdf> <38> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <39> <M:/presentations/bb_pres/fig/wtex.pdf>
+<40> <M:/presentations/bb_pres/fig/wtex.pdf> <41> <M:/presentations/bb_pres/fig
+/wtex.pdf> <42> <M:/presentations/bb_pres/fig/wtex.pdf> <43> <M:/presentations/
+bb_pres/fig/wtex.pdf> <44> <M:/presentations/bb_pres/fig/wtex.pdf> <45> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <46> <M:/presentations/bb_pres/fig/wtex.pdf>
+<47> <M:/presentations/bb_pres/fig/wtex.pdf> <48> <M:/presentations/bb_pres/fig
+/wtex.pdf> <49> <M:/presentations/bb_pres/fig/wtex.pdf> <50> <M:/presentations/
+bb_pres/fig/wtex.pdf> <51> <M:/presentations/bb_pres/fig/wtex.pdf> <52> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <53> <M:/presentations/bb_pres/fig/wtex.pdf>
+<54> <M:/presentations/bb_pres/fig/wtex.pdf> <55> <M:/presentations/bb_pres/fig
+/wtex.pdf> <56> <M:/presentations/bb_pres/fig/wtex.pdf> <57> <M:/presentations/
+bb_pres/fig/wtex.pdf> <58> <M:/presentations/bb_pres/fig/wtex.pdf> <59> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <60> <M:/presentations/bb_pres/fig/wtex.pdf>
+<61> <M:/presentations/bb_pres/fig/wtex.pdf> <62> <M:/presentations/bb_pres/fig
+/wtex.pdf> <63> <M:/presentations/bb_pres/fig/wtex.pdf> <64> <M:/presentations/
+bb_pres/fig/wtex.pdf> <65> <M:/presentations/bb_pres/fig/wtex.pdf> <66> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <67> <M:/presentations/bb_pres/fig/wtex.pdf>
+<68> <M:/presentations/bb_pres/fig/wtex.pdf> <69> <M:/presentations/bb_pres/fig
+/wtex.pdf> <70> <M:/presentations/bb_pres/fig/wtex.pdf> <71> <M:/presentations/
+bb_pres/fig/wtex.pdf> <72> <M:/presentations/bb_pres/fig/wtex.pdf> <73> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <74> <M:/presentations/bb_pres/fig/wtex.pdf>
+<75> <M:/presentations/bb_pres/fig/wtex.pdf> <76> <M:/presentations/bb_pres/fig
+/wtex.pdf> <77> <M:/presentations/bb_pres/fig/wtex.pdf> <78> <M:/presentations/
+bb_pres/fig/wtex.pdf> <79> <M:/presentations/bb_pres/fig/wtex.pdf> <80> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <81> <M:/presentations/bb_pres/fig/wtex.pdf>
+<82> <M:/presentations/bb_pres/fig/wtex.pdf> <83> <M:/presentations/bb_pres/fig
+/wtex.pdf> <84> <M:/presentations/bb_pres/fig/wtex.pdf> <85> <M:/presentations/
+bb_pres/fig/wtex.pdf> <86> <M:/presentations/bb_pres/fig/wtex.pdf> <87> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <88> <M:/presentations/bb_pres/fig/wtex.pdf>
+<89> <M:/presentations/bb_pres/fig/wtex.pdf> <90> <M:/presentations/bb_pres/fig
+/wtex.pdf> <91> <M:/presentations/bb_pres/fig/wtex.pdf> <92> <M:/presentations/
+bb_pres/fig/wtex.pdf> <93> <M:/presentations/bb_pres/fig/wtex.pdf> <94> <M:/pre
+sentations/bb_pres/fig/wtex.pdf> <95> <M:/presentations/bb_pres/fig/wtex.pdf>
+<96> <M:/presentations/bb_pres/fig/wtex.pdf> <97> <M:/presentations/bb_pres/fig
+/wtex.pdf> <98> <M:/presentations/bb_pres/fig/wtex.pdf> <99> <M:/presentations/
+bb_pres/fig/wtex.pdf> <100> <M:/presentations/bb_pres/fig/wtex.pdf> <101> <M:/p
+resentations/bb_pres/fig/wtex.pdf> <102> <M:/presentations/bb_pres/fig/wtex.pdf
+> <103> <M:/presentations/bb_pres/fig/wtex.pdf> <104> <M:/presentations/bb_pres
+/fig/wtex.pdf> <105> <M:/presentations/bb_pres/fig/wtex.pdf> <106> <M:/presenta
+tions/bb_pres/fig/wtex.pdf> <107> <M:/presentations/bb_pres/fig/wtex.pdf>
+<108> <M:/presentations/bb_pres/fig/wtex.pdf> <109> <M:/presentations/bb_pres/f
+ig/wtex.pdf> <110> <M:/presentations/bb_pres/fig/wtex.pdf> <111> <M:/presentati
+ons/bb_pres/fig/wtex.pdf> <112> <M:/presentations/bb_pres/fig/wtex.pdf> <113> <
+M:/presentations/bb_pres/fig/wtex.pdf> <114> <M:/presentations/bb_pres/fig/wtex
+.pdf> <115> <M:/presentations/bb_pres/fig/wtex.pdf> <116> <M:/presentations/bb_
+pres/fig/wtex.pdf> <117> <M:/presentations/bb_pres/fig/wtex.pdf> <118> <M:/pres
+entations/bb_pres/fig/wtex.pdf> <119> <M:/presentations/bb_pres/fig/wtex.pdf>
+<120> <M:/presentations/bb_pres/fig/wtex.pdf> <121> <M:/presentations/bb_pres/f
+ig/wtex.pdf> <122> <M:/presentations/bb_pres/fig/wtex.pdf> <123> <M:/presentati
+ons/bb_pres/fig/wtex.pdf> <124> <M:/presentations/bb_pres/fig/wtex.pdf> <125> <
+M:/presentations/bb_pres/fig/wtex.pdf> <126> <M:/presentations/bb_pres/fig/wtex
+.pdf> <127> <M:/presentations/bb_pres/fig/wtex.pdf> <128> <M:/presentations/bb_
+pres/fig/wtex.pdf> <129> <M:/presentations/bb_pres/fig/wtex.pdf> <130> <M:/pres
+entations/bb_pres/fig/wtex.pdf> <131> <M:/presentations/bb_pres/fig/wtex.pdf>
+<132>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
 Package pdftex.def Info: fig/back_tmp.pdf used on input line 243.
@@ -1573,7 +1669,7 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 243.
  [10
 
 ]
-<fig/prdnrm.pdf, id=198, 578.16pt x 289.08pt>
+<fig/prdnrm.pdf, id=898, 578.16pt x 289.08pt>
 File: fig/prdnrm.pdf Graphic file (type pdf)
  <use fig/prdnrm.pdf>
 Package pdftex.def Info: fig/prdnrm.pdf used on input line 254.
@@ -1589,100 +1685,233 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 254.
  [11
 
  <M:/presentations/bb_pres/fig/prdnrm.pdf>]
-<fig/hill.pdf, id=218, 289.08pt x 252.945pt>
-File: fig/hill.pdf Graphic file (type pdf)
- <use fig/hill.pdf>
-Package pdftex.def Info: fig/hill.pdf used on input line 273.
-(pdftex.def)             Requested size: 154.03183pt x 134.77809pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 273.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [12
-
- <M:/presentations/bb_pres/fig/hill.pdf>]
-<fig/title_plo2.pdf, id=237, 578.16pt x 198.7425pt>
+<fig/title_plo2.pdf, id=918, 650.43pt x 216.81pt>
 File: fig/title_plo2.pdf Graphic file (type pdf)
  <use fig/title_plo2.pdf>
-Package pdftex.def Info: fig/title_plo2.pdf used on input line 287.
-(pdftex.def)             Requested size: 308.06367pt x 105.89706pt.
-
-Overfull \vbox (4.8848pt too high) detected at line 287
- []
-
+Package pdftex.def Info: fig/title_plo2.pdf used on input line 286.
+(pdftex.def)             Requested size: 342.2953pt x 114.10153pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
+
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 287.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 286.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [13
+ [12
 
  <M:/presentations/bb_pres/fig/title_plo2.pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 301.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 300.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [14
+ [13
 
-] <fig/sapdo.pdf, id=270, 505.89pt x 144.54pt>
+] <fig/sapdo.pdf, id=951, 505.89pt x 144.54pt>
 File: fig/sapdo.pdf Graphic file (type pdf)
 
 <use fig/sapdo.pdf>
-Package pdftex.def Info: fig/sapdo.pdf used on input line 322.
+Package pdftex.def Info: fig/sapdo.pdf used on input line 321.
 (pdftex.def)             Requested size: 325.17949pt x 92.90887pt.
- <fig/saptide.pdf, id=271, 505.89pt x 144.54pt>
+ <fig/saptide.pdf, id=952, 505.89pt x 144.54pt>
 File: fig/saptide.pdf Graphic file (type pdf)
 
 <use fig/saptide.pdf>
-Package pdftex.def Info: fig/saptide.pdf used on input line 322.
+Package pdftex.def Info: fig/saptide.pdf used on input line 321.
 (pdftex.def)             Requested size: 325.17949pt x 92.90887pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 322.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 321.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [15
+ [14
 
  <M:/presentations/bb_pres/fig/sapdo.pdf> <M:/presentations/bb_pres/fig/saptide
 .pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 337.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 336.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
-[16
+[15
 
-] <fig/NERRS_locations.png, id=301, 725.71124pt x 446.41782pt>
+] <fig/NERRS_locations.png, id=982, 725.71124pt x 446.41782pt>
 File: fig/NERRS_locations.png Graphic file (type png)
 
 <use fig/NERRS_locations.png>
-Package pdftex.def Info: fig/NERRS_locations.png used on input line 346.
+Package pdftex.def Info: fig/NERRS_locations.png used on input line 342.
 (pdftex.def)             Requested size: 273.83728pt x 168.44847pt.
-
-Overfull \vbox (6.807pt too high) detected at line 346
- []
-
 File: fig/back_tmp.pdf Graphic file (type pdf)
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 346.
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 342.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [16
+
+ <M:/presentations/bb_pres/fig/NERRS_locations.png>] <M:/presentations/bb_pres/
+fig/detide_ani.pdf>
+<2> <M:/presentations/bb_pres/fig/detide_ani.pdf> <3> <M:/presentations/bb_pres
+/fig/detide_ani.pdf> <4> <M:/presentations/bb_pres/fig/detide_ani.pdf> <5> <M:/
+presentations/bb_pres/fig/detide_ani.pdf> <6> <M:/presentations/bb_pres/fig/det
+ide_ani.pdf> <7> <M:/presentations/bb_pres/fig/detide_ani.pdf> <8> <M:/presenta
+tions/bb_pres/fig/detide_ani.pdf> <9> <M:/presentations/bb_pres/fig/detide_ani.
+pdf> <10> <M:/presentations/bb_pres/fig/detide_ani.pdf> <11> <M:/presentations/
+bb_pres/fig/detide_ani.pdf> <12> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<13> <M:/presentations/bb_pres/fig/detide_ani.pdf> <14> <M:/presentations/bb_pr
+es/fig/detide_ani.pdf> <15> <M:/presentations/bb_pres/fig/detide_ani.pdf> <16> 
+<M:/presentations/bb_pres/fig/detide_ani.pdf> <17> <M:/presentations/bb_pres/fi
+g/detide_ani.pdf> <18> <M:/presentations/bb_pres/fig/detide_ani.pdf> <19> <M:/p
+resentations/bb_pres/fig/detide_ani.pdf> <20> <M:/presentations/bb_pres/fig/det
+ide_ani.pdf> <21> <M:/presentations/bb_pres/fig/detide_ani.pdf> <22> <M:/presen
+tations/bb_pres/fig/detide_ani.pdf> <23> <M:/presentations/bb_pres/fig/detide_a
+ni.pdf> <24> <M:/presentations/bb_pres/fig/detide_ani.pdf> <25> <M:/presentatio
+ns/bb_pres/fig/detide_ani.pdf> <26> <M:/presentations/bb_pres/fig/detide_ani.pd
+f> <27> <M:/presentations/bb_pres/fig/detide_ani.pdf> <28> <M:/presentations/bb
+_pres/fig/detide_ani.pdf> <29> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<30> <M:/presentations/bb_pres/fig/detide_ani.pdf> <31> <M:/presentations/bb_pr
+es/fig/detide_ani.pdf> <32> <M:/presentations/bb_pres/fig/detide_ani.pdf> <33> 
+<M:/presentations/bb_pres/fig/detide_ani.pdf> <34> <M:/presentations/bb_pres/fi
+g/detide_ani.pdf> <35> <M:/presentations/bb_pres/fig/detide_ani.pdf> <36> <M:/p
+resentations/bb_pres/fig/detide_ani.pdf> <37> <M:/presentations/bb_pres/fig/det
+ide_ani.pdf> <38> <M:/presentations/bb_pres/fig/detide_ani.pdf> <39> <M:/presen
+tations/bb_pres/fig/detide_ani.pdf> <40> <M:/presentations/bb_pres/fig/detide_a
+ni.pdf> <41> <M:/presentations/bb_pres/fig/detide_ani.pdf> <42> <M:/presentatio
+ns/bb_pres/fig/detide_ani.pdf> <43> <M:/presentations/bb_pres/fig/detide_ani.pd
+f> <44> <M:/presentations/bb_pres/fig/detide_ani.pdf> <45> <M:/presentations/bb
+_pres/fig/detide_ani.pdf> <46> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<47> <M:/presentations/bb_pres/fig/detide_ani.pdf> <48> <M:/presentations/bb_pr
+es/fig/detide_ani.pdf> <49> <M:/presentations/bb_pres/fig/detide_ani.pdf> <50> 
+<M:/presentations/bb_pres/fig/detide_ani.pdf> <51> <M:/presentations/bb_pres/fi
+g/detide_ani.pdf> <52> <M:/presentations/bb_pres/fig/detide_ani.pdf> <53> <M:/p
+resentations/bb_pres/fig/detide_ani.pdf> <54> <M:/presentations/bb_pres/fig/det
+ide_ani.pdf> <55> <M:/presentations/bb_pres/fig/detide_ani.pdf> <56> <M:/presen
+tations/bb_pres/fig/detide_ani.pdf> <57> <M:/presentations/bb_pres/fig/detide_a
+ni.pdf> <58> <M:/presentations/bb_pres/fig/detide_ani.pdf> <59> <M:/presentatio
+ns/bb_pres/fig/detide_ani.pdf> <60> <M:/presentations/bb_pres/fig/detide_ani.pd
+f> <61> <M:/presentations/bb_pres/fig/detide_ani.pdf> <62> <M:/presentations/bb
+_pres/fig/detide_ani.pdf> <63> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<64> <M:/presentations/bb_pres/fig/detide_ani.pdf> <65> <M:/presentations/bb_pr
+es/fig/detide_ani.pdf> <66> <M:/presentations/bb_pres/fig/detide_ani.pdf> <67> 
+<M:/presentations/bb_pres/fig/detide_ani.pdf> <68> <M:/presentations/bb_pres/fi
+g/detide_ani.pdf> <69> <M:/presentations/bb_pres/fig/detide_ani.pdf> <70> <M:/p
+resentations/bb_pres/fig/detide_ani.pdf> <71> <M:/presentations/bb_pres/fig/det
+ide_ani.pdf> <72> <M:/presentations/bb_pres/fig/detide_ani.pdf> <73> <M:/presen
+tations/bb_pres/fig/detide_ani.pdf> <74> <M:/presentations/bb_pres/fig/detide_a
+ni.pdf> <75> <M:/presentations/bb_pres/fig/detide_ani.pdf> <76> <M:/presentatio
+ns/bb_pres/fig/detide_ani.pdf> <77> <M:/presentations/bb_pres/fig/detide_ani.pd
+f> <78> <M:/presentations/bb_pres/fig/detide_ani.pdf> <79> <M:/presentations/bb
+_pres/fig/detide_ani.pdf> <80> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<81> <M:/presentations/bb_pres/fig/detide_ani.pdf> <82> <M:/presentations/bb_pr
+es/fig/detide_ani.pdf> <83> <M:/presentations/bb_pres/fig/detide_ani.pdf> <84> 
+<M:/presentations/bb_pres/fig/detide_ani.pdf> <85> <M:/presentations/bb_pres/fi
+g/detide_ani.pdf> <86> <M:/presentations/bb_pres/fig/detide_ani.pdf> <87> <M:/p
+resentations/bb_pres/fig/detide_ani.pdf> <88> <M:/presentations/bb_pres/fig/det
+ide_ani.pdf> <89> <M:/presentations/bb_pres/fig/detide_ani.pdf> <90> <M:/presen
+tations/bb_pres/fig/detide_ani.pdf> <91> <M:/presentations/bb_pres/fig/detide_a
+ni.pdf> <92> <M:/presentations/bb_pres/fig/detide_ani.pdf> <93> <M:/presentatio
+ns/bb_pres/fig/detide_ani.pdf> <94> <M:/presentations/bb_pres/fig/detide_ani.pd
+f> <95> <M:/presentations/bb_pres/fig/detide_ani.pdf> <96> <M:/presentations/bb
+_pres/fig/detide_ani.pdf> <97> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<98> <M:/presentations/bb_pres/fig/detide_ani.pdf> <99> <M:/presentations/bb_pr
+es/fig/detide_ani.pdf> <100> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<101> <M:/presentations/bb_pres/fig/detide_ani.pdf> <102> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <103> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<104> <M:/presentations/bb_pres/fig/detide_ani.pdf> <105> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <106> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<107> <M:/presentations/bb_pres/fig/detide_ani.pdf> <108> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <109> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<110> <M:/presentations/bb_pres/fig/detide_ani.pdf> <111> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <112> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<113> <M:/presentations/bb_pres/fig/detide_ani.pdf> <114> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <115> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<116> <M:/presentations/bb_pres/fig/detide_ani.pdf> <117> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <118> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<119> <M:/presentations/bb_pres/fig/detide_ani.pdf> <120> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <121> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<122> <M:/presentations/bb_pres/fig/detide_ani.pdf> <123> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <124> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<125> <M:/presentations/bb_pres/fig/detide_ani.pdf> <126> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <127> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<128> <M:/presentations/bb_pres/fig/detide_ani.pdf> <129> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <130> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<131> <M:/presentations/bb_pres/fig/detide_ani.pdf> <132> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <133> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<134> <M:/presentations/bb_pres/fig/detide_ani.pdf> <135> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <136> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<137> <M:/presentations/bb_pres/fig/detide_ani.pdf> <138> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <139> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<140> <M:/presentations/bb_pres/fig/detide_ani.pdf> <141> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <142> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<143> <M:/presentations/bb_pres/fig/detide_ani.pdf> <144> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <145> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<146> <M:/presentations/bb_pres/fig/detide_ani.pdf> <147> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <148> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<149> <M:/presentations/bb_pres/fig/detide_ani.pdf> <150> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <151> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<152> <M:/presentations/bb_pres/fig/detide_ani.pdf> <153> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <154> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<155> <M:/presentations/bb_pres/fig/detide_ani.pdf> <156> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <157> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<158> <M:/presentations/bb_pres/fig/detide_ani.pdf> <159> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <160> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<161> <M:/presentations/bb_pres/fig/detide_ani.pdf> <162> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <163> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<164> <M:/presentations/bb_pres/fig/detide_ani.pdf> <165> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <166> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<167> <M:/presentations/bb_pres/fig/detide_ani.pdf> <168> <M:/presentations/bb_
+pres/fig/detide_ani.pdf> <169> <M:/presentations/bb_pres/fig/detide_ani.pdf>
+<170>
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 351.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [17
 
- <M:/presentations/bb_pres/fig/NERRS_locations.png>]
+]
+<fig/dtd_met.pdf, id=1866, 650.43pt x 397.485pt>
+File: fig/dtd_met.pdf Graphic file (type pdf)
+ <use fig/dtd_met.pdf>
+Package pdftex.def Info: fig/dtd_met.pdf used on input line 364.
+(pdftex.def)             Requested size: 342.2953pt x 209.18614pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 351.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 364.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [18
 
-] (M:\presentations\bb_pres\bb_pres.bbl)
+ <M:/presentations/bb_pres/fig/dtd_met.pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 563.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 377.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [19
+
+]
+<fig/cavalcanti.jpg, id=1890, 602.25pt x 903.375pt>
+File: fig/cavalcanti.jpg Graphic file (type jpg)
+ <use fig/cavalcanti.jpg>
+Package pdftex.def Info: fig/cavalcanti.jpg used on input line 414.
+(pdftex.def)             Requested size: 56.4796pt x 84.71877pt.
+
+<fig/epa_logo.png, id=1892, 195.6108pt x 196.0926pt>
+File: fig/epa_logo.png Graphic file (type png)
+ <use fig/epa_logo.png>
+Package pdftex.def Info: fig/epa_logo.png used on input line 414.
+(pdftex.def)             Requested size: 68.45801pt x 68.62445pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 414.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [20
+
+ <M:/presentations/bb_pres/fig/cavalcanti.jpg> <M:/presentations/bb_pres/fig/ep
+a_logo.png>] (M:\presentations\bb_pres\bb_pres.bbl)
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 423.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+Package atenddvi Info: Last page = 21.
+ [21
 
 ]
 \tf@nav=\write6
@@ -1693,26 +1922,26 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 563.
 Package caption Warning: Unused \captionsetup[subfloat] on input line 214.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 565.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 565.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 425.
 (M:\presentations\bb_pres\bb_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 565.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 565.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
 Package rerunfilecheck Info: File `bb_pres.out' has not changed.
-(rerunfilecheck)             Checksum: 1D8BF7465C37A27C25F8C1F5D6C04EB3;219.
+(rerunfilecheck)             Checksum: 38F49B3E0303D7BC12F6172AD29263D9;266.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 565.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 28045 strings out of 493921
- 556319 string characters out of 3147282
- 663995 words of memory out of 3000000
- 30649 multiletter control sequences out of 15000+200000
- 11326 words of font info for 43 fonts, out of 3000000 for 9000
+ 29819 strings out of 493921
+ 587313 string characters out of 3147282
+ 670056 words of memory out of 3000000
+ 32399 multiletter control sequences out of 15000+200000
+ 12571 words of font info for 48 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  49i,16n,73p,469b,724s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{sub@fig:salmoyr2} has been referenced but does no
@@ -1729,12 +1958,13 @@ nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on bb_pres.pdf (19 pages, 1343452 bytes).
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on bb_pres.pdf (21 pages, 3829800 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
- 272 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1971 PDF objects out of 2073 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 5465 words of extra memory for PDF output out of 10000 (max. 10000000)
 

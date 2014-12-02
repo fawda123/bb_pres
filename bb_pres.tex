@@ -50,7 +50,7 @@
 \usepackage{alltt}
 \usetheme{Boadilla}
 \usepackage{graphicx}
-\usepackage[draft]{animate}
+\usepackage[final]{animate}
 \usepackage{breqn}
 \usepackage{xcolor}
 \usepackage{booktabs}
@@ -95,7 +95,7 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-\title[Evaluating Trends in Gulf Estuaries]{\textbf{A Novel Approach for Evaluation of Water Quality Trends in Gulf Coast Estuaries}}
+\title[Trend Evaluation in Gulf Estuaries]{\textbf{A Novel Approach for Evaluation of Water Quality Trends in Gulf Coast Estuaries}}
 \author[Beck, Hagy, Murrell]{Marcus W. Beck\inst{1} \and James D. Hagy III\inst{2} \and Michael C. Murrell\inst{2}}
 
 \institute[EPA]{\inst{1} ORISE post-doc, USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \and \inst{2} USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division}
@@ -215,7 +215,7 @@ What affects our interpretation of chlorophyll response to nutrients?
 
 %%%%%%
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Given the observed changes over time and the available data -- Can we... 
+Given the observed changes over time and the available data -- Can we... \\~\\
 \begin{itemize}
 \item ...provide a natural history of water quality that is temporally consistent with drivers of change (i.e., context for trend evaluation)?
 \item ...characterize changes in extreme events in addition to describing the mean response?  
@@ -238,7 +238,7 @@ Based on the idea that pollution concentration is a function of \emtxt{time}, \e
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
 How does weighted regression work?
 \begin{center}
-\animategraphics[controls,width=\linewidth]{12}{fig/wtex}{}{} %frame rate is 12 per/sec
+\animategraphics[controls,width=\linewidth]{10}{fig/wtex}{}{} %frame rate is 10 per/sec
 \end{center}
 \end{frame}
 
@@ -246,7 +246,7 @@ How does weighted regression work?
 
 %%%%%%
 \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Results can also be normalized by predictors -- salinity
+Results show temporally consistent trends over time
 \begin{figure}
 \centerline{\includegraphics[width = \textwidth]{fig/prdnrm.pdf}}
 \caption{Predicted and salinity-normalized annual chlorophyll by segment.}
@@ -255,22 +255,22 @@ Results can also be normalized by predictors -- salinity
 
 
 
-%%%%%%
-\begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Because the model is dynamic, we have parameters describing the relationship of chlorophyll with other factors specific to different time periods \\~\\
-\begin{columns}[T]
-\begin{column}{0.45\textwidth}
-\centerline{\includegraphics[width = \textwidth]{fig/hill.pdf}}
-\end{column}
-\begin{column}{0.45\textwidth}
-\begin{itemize}
-\item Early period (blue) - point-sources
-\item Late period (red) - non-point sources
-\item Chlorophyll shows increasing response to freshwater input in recent years
-\end{itemize}
-\end{column}
-\end{columns}
-\end{frame}
+% %%%%%%
+% \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
+% Because the model is dynamic, we have parameters describing the relationship of chlorophyll with other factors specific to different time periods \\~\\
+% \begin{columns}[T]
+% \begin{column}{0.45\textwidth}
+% \centerline{\includegraphics[width = \textwidth]{fig/hill.pdf}}
+% \end{column}
+% \begin{column}{0.45\textwidth}
+% \begin{itemize}
+% \item Early period (blue) - point-sources
+% \item Late period (red) - non-point sources
+% \item Chlorophyll shows increasing response to freshwater input in recent years
+% \end{itemize}
+% \end{column}
+% \end{columns}
+% \end{frame}
 
 % figure used on title page
 
@@ -282,8 +282,7 @@ What does this mean for Tampa Bay and other Gulf Coast estuaries?\\~\\
 \item Predictions followed observed chlorophyll -- but increased clarity in the description
 \item More detailed evaluation of trends allows greater insight into drivers of change\\~\\
 \end{itemize}
-The model parameters show us a picture...
-\centerline{\includegraphics[width = 0.9\textwidth]{fig/title_plo2.pdf}}
+\centerline{\includegraphics[width = \textwidth]{fig/title_plo2.pdf}}
 \end{frame}
 
 \section{Case 2: Improving metabolism estimates}
@@ -340,223 +339,84 @@ $DO = \beta_0 + \beta_1 H + \beta_2 t + \beta_3 \sin\left(2\pi t\right) + \beta_
 \begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
 System Wide Monitoring Program, initiated in 1995 to provide continuous data at over 300 stations in 28 US estuaries \\~\\
 \centerline{\includegraphics[width = 0.8\textwidth]{fig/NERRS_locations.png}}
-\tiny
-\flushright
-\href{http://nerrs.noaa.gov/ReservesMap.aspx}{http://nerrs.noaa.gov/ReservesMap.aspx}
 \end{frame}
+
+
 
 %%%%%%
 \begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
-Metabolism was estimated using observed and `detided' DO time series
+\begin{center}
+\animategraphics[controls,width=\linewidth]{50}{fig/detide_ani}{1}{169} %frame rate is 50 per/sec
+\end{center}
 \end{frame}
 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% \onslide<+->
-% The SWMP database and others like it represent incredible opportunities to further our knowledge of natural systems...\\~\\
-% ...including the effects of eutrophication \\~\\
-% \onslide<+->
-% \alert{Problem:} These data are numerous and not easily compared\\~\\
-% \alert{Solution:} Develop open-source tools that address the challenges of large-scale comparative analyses with continuous monitoring data\\~\\
-% \onslide<+->
-% The benefits include:
-% \begin{itemize}
-% \item Free for use by anyone
-% \item Free to collaborate
-% \item Facilitation of analysis with `under-the-hood' functionality
-% \end{itemize}
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% \alert{SWMPr} is a freely available package for use with R \\~\\
-% Designed to facilitate the analysis of SWMP data by providing functions that...\\~\\
-% \begin{itemize}
-% \item \alert{Retrieve} SWMP data for any site and date combination \\~\\ 
-% \item \alert{Organize} the data using standard pre-processing techniques \\~\\
-% \item \alert{Analyze} the data using a suite of exploratory and graphical analysis tools \\~\\
-% \end{itemize}
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% What we've done so far... estimates of ecosystem metabolism 
-% <</metab, message = F, fig = T, fig.width = 9, fig.height = 5, family = 'serif', cache = T, echo = F>>=
-% 
-% # load(file='M:/wq_models/SWMP/raw/rproc/dat_nem.RData')
-% # 
-% # sum.fun <- function(x){
-% # 
-% #   Pg <- mean(x$Pg,na.rm=T)
-% #   Rt <- mean(x$Rt,na.rm=T)
-% #   data.frame(Pg,Rt)
-% #   
-% #   }
-% #   
-% # to.plo <- lapply(dat.nem, function(x){
-% #   x$Date <- as.numeric(strftime(x$Date, '%Y'))
-% #   tmp <- lapply(split(x, x$Date), sum.fun)
-% #   tmp <- do.call('rbind', tmp)
-% #   sum.fun(tmp)
-% #   })
-% # nem_sum <- melt(to.plo)
-% # save(nem_sum, file = 'data/nem_sum.RData')
-% 
-% load(file='data/nem_sum.RData')
-% to.plo <- nem_sum
-% 
-% #reassign factors for ranking in plot
-% sort.val<-order(to.plo[to.plo$variable=='Pg','value'])
-% to.plo$L1<-factor(to.plo$L1)
-% to.plo$L1<-factor(
-%   to.plo$L1,
-%   levels=levels(to.plo$L1)[sort.val],
-%   labels=levels(to.plo$L1)[sort.val]
-%   )
-% new.labs<-c('Mean annual production','Mean annual respiration')
-% to.plo$variable<-factor(to.plo$variable,levels=c('Pg', 'Rt'),labels=new.labs)
-% 
-% ylabs<-expression(paste('mmol ', O[2],' ', m^-2,' ', d^-1))
-% 
-% p<-ggplot(to.plo,aes(x=L1,y=value,group=variable,fill=variable)) + 
-%   geom_bar(stat='identity') + 
-%   scale_y_continuous(ylabs) + 
-%   facet_wrap(~variable,ncol=1, scales = 'free_y') + 
-%   scale_x_discrete(name=element_blank()) + 
-%   theme_mine() + 
-%   theme(
-%     axis.text.x = element_text(angle = 90, vjust=0.5,hjust=1,size=6),
-%     legend.position='none'
-%     ) +
-%   scale_fill_manual(values = pal(5)[c(2, 4)])
-% print(p)
-% @
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% \vspace{-0.1in}
-% <<dtd_met, results = 'hold', cache = T, fig.height = 5.5, fig.width = 9, out.width = '\\textwidth', eval = T, echo = F, family = 'serif'>>=
-% load('data/SAPDC_wtreg_12.RData')
-% to_plo <- get('SAPDC_wtreg_12')
-% 
-% load('data/sapdc_met.RData')
-% met_plo <- melt(sapdc_met, id.var = 'Date', measure.var = c('Pg', 'Rt', 'Pg_dtd', 'Rt_dtd'))
-% met_plo$type <- rep('Observed', length = nrow(met_plo))
-% met_plo$type[grep('dtd$', met_plo$variable)] <- 'Detided'
-% met_plo$variable <- gsub('_dtd$', '', met_plo$variable)
-% met_plo$type<- factor(met_plo$type, levels = c('Observed', 'Detided'), labels = c('Observed', 'Detided'))
-% met_plo$variable <- factor(met_plo$variable, levels = c('Pg', 'Rt'), labels = c('Production', 'Respiration'))
-% 
-% ylab<-expression(paste('DO (mg ',L^-1,')'))
-% p1 <- ggplot(to_plo, aes(x = DateTimeStamp)) + 
-%   geom_line(aes(y = DO_obs, colour = 'Observed')) +
-%   geom_line(aes(y = DO_nrm, colour = 'Detided')) +
-%   scale_colour_manual('', values=pal(5)[c(2, 5)]) +
-%   scale_y_continuous(ylab) +
-%   theme_mine() +
-%   theme(legend.position = 'top', axis.title.x = element_blank())
-% 
-% ylab<-expression(paste('mmol ', O[2],' ', m^-2,' ', d^-1))
-% p2 <- ggplot(met_plo, aes(x = Date, y = value, group = variable, colour = variable)) + 
-%   geom_line() +
-%   geom_point() +
-%   facet_wrap(~type, ncol = 1) + 
-%   scale_colour_manual('', values=pal(5)[c(1, 3)]) +
-%   scale_y_continuous(ylab) +
-%   theme_mine() +
-%   theme(legend.position = 'top', axis.title.x = element_blank())
-% 
-% grid.arrange(p1, p2, ncol = 1, heights = c(1.5,2))
-% @
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Case 3: Open-source science}}{\textbf{Analysis tools for water quality data}}
-% \onslide<+->
-% Tools in the SWMPr package (or that will be included) have facilitated comparative analyses of millions of water quality records from NERRS \\~\\
-% These tools can help improve our understanding of nutrient pollution and eutrophication \\~\\
-% \onslide<+->
-% Potential for many other applications... actively being developed \\~\\
-% \begin{columns}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/Rlogo.png}}
-% \end{column}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/RStudio.png}}
-% \end{column}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/knit-logo.png}}
-% \end{column}
-% \begin{column}{0.25\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/octocat.png}}
-% \end{column}
-% \end{columns}
-% \end{frame}
-% 
-% \section{Conclusions}
-% %%%%%%
-% \begin{frame}{\textbf{Conclusions}}
-% The analysis of water quality will continue to require the use of novel tecniques to interpret the data \\~\\
-% These needs are motivated by: \\~\\
-% \begin{itemize}
-% \item The continued relevance of stressors that influence ecosystem conditions \\~\\
-% \item Our increasing ability to gather raw, uninterpreted data \\~\\
-% \end{itemize}
-% Our methods must be able to make sense of \alert{historical trends}, as well as predict \alert{future conditions}
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}{\textbf{Conclusions}}
-% Our ability to \alert{share}, \alert{reproduce}, and \alert{collaborate} is essential \\~\\
-% \alert{SWMPr package:} \href{https://github.com/fawda123/SWMPr}{https://github.com/fawda123/SWMPr} \\~\\
-% \alert{Seagrass applications:} \href{https://beckmw.shinyapps.io/sg_depth}{https://beckmw.shinyapps.io/sg\_depth} \\~\\
-% \alert{Ecosystem metabolism and detiding:} \href{http://spark.rstudio.com/beckmw/detiding_cases/}{http://spark.rstudio.com/beckmw/detiding\_cases/} \\~\\
-% \alert{This presentation:} \href{https://github.com/fawda123/wqtrends_pres}{https://github.com/fawda123/wqtrends\_pres}
-% \end{frame}
-% 
-% %%%%%%
-% \begin{frame}
-% Acknowledgments:\\~\\
-% \begin{columns}
-% \begin{column}{0.6\textwidth}
-% {\footnotesize
-% Research staff and employees at USEPA Gulf Ecology Division - especially J. Hagy, M. Murrell\\~\\
-% Field staff and data managers at Hillsborough County Environmental Protection Commission\\~\\
-% Research coordinators, technicians, and field staff of the National Estuarine Research Reserve System}\\~\\
-% \end{column}
-% \begin{column}{0.3\textwidth}
-% \vspace{-0.2in}
-% \begin{center}
-% {\tiny
-% Wes Anderson Zissou color theme borrowed and adapted from \href{https://github.com/karthik/wesanderson}{github.com/karthik}\\~\\
-% \includegraphics[width=0.55\linewidth]{fig/zissou.png}\\~\\
-% \vspace{-0.15in}
-% \scalebox{0.7}{\hbox{\tiny Image credit:\thinspace{\tiny \href{http://stephenmorrow.deviantart.com/}{Stephen Morrow}}}}}
-% \end{center}
-% \end{column}
-% \end{columns}
-% \vfill
-% Funding sources and contact:\\~\\
-% \begin{columns}
-% \begin{column}{0.5\textwidth}
-% \centerline{\includegraphics[width=0.4\linewidth]{fig/epa_logo.png}}
-% \end{column}
-% \begin{column}{0.5\textwidth}
-% \scriptsize
-% \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
-% Phone: 8509342480 \\~\\
-% Github: \href{https://github.com/fawda123/}{github.com/fawda123/} \\~\\
-% Blog: \href{http://beckmw.wordpress.com/}{beckmw.wordpress.com/}
-% \end{column}
-% \end{columns}
-% \vspace{0.2in}
-% \end{frame}
+\begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+
+{\centering \includegraphics[width=\textwidth]{fig/dtd_met} 
+
+}
+
+
+
+\end{knitrout}
+\end{frame}
+
+\section{Conclusions}
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}
+The analysis of water quality will continue to require the use of novel techniques, such as weighted regression\\~\\
+These needs are motivated by: \\~\\
+\begin{itemize}
+\item The continued relevance of stressors that influence ecosystem conditions \\~\\
+\item Our increasing ability to gather raw, uninterpreted data \\~\\
+\end{itemize}
+Our methods must include a clear definition of \emtxt{trend} in the context of drivers of change
+\end{frame}
+
+%%%%%%
+\begin{frame}
+Acknowledgments:\\~\\
+\begin{columns}
+\begin{column}{0.6\textwidth}
+{\footnotesize
+Field staff and data managers at Hillsborough County Environmental Protection Commission, Tampa Bay Estuary Program\\~\\
+Research coordinators, technicians, and field staff of the National Estuarine Research Reserve System}\\~\\
+\end{column}
+\begin{column}{0.3\textwidth}
+\vspace{-0.2in}
+\begin{center}
+{\tiny
+Wes Anderson Cavalcanti color theme borrowed and adapted from \href{https://github.com/karthik/wesanderson}{github.com/karthik}\\~\\
+\includegraphics[width=0.55\linewidth]{fig/cavalcanti.jpg}\\~\\
+\vspace{-0.15in}
+\scalebox{0.7}{\hbox{\tiny Image credit:\thinspace{\tiny \href{https://m1.behance.net/}{https://m1.behance.net/}}}}}
+\end{center}
+\end{column}
+\end{columns}
+\vfill
+Funding sources and contact:\\~\\
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width=0.4\linewidth]{fig/epa_logo.png}}
+\end{column}
+\begin{column}{0.5\textwidth}
+\scriptsize
+\href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
+Phone: 8509342480 \\~\\
+Github: \href{https://github.com/fawda123/}{github.com/fawda123/} \\~\\
+Blog: \href{http://beckmw.wordpress.com/}{beckmw.wordpress.com/}
+\end{column}
+\end{columns}
+\vspace{0.2in}
+\end{frame}
 
 %%%%%%
 \section{References}
 \begin{frame}[allowframebreaks,t]{\textbf{References}}
-\tiny
+\footnotesize
 \setbeamertemplate{bibliography item}{}
 \bibliographystyle{apalike_mine}
 \bibliography{ref_diss}
