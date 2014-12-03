@@ -157,18 +157,6 @@ dev.off()
 
 %%%%%%
 \begin{frame}{\textbf{Managing coastal waters}}{\textbf{How do we use data?}}
-The foundation of most management programs is a strong monitoring network \\~\\
-Monitoring provides information for decision-making based on apparent trends...
-\vspace{0.2in}
-\begin{center}
-\emtxt{What are the changes in water quality over time?}\\~\\
-\emtxt{Are these changes `good' or `bad' based on our management objectives?}\\~\\
-\emtxt{What may have caused these changes?}
-\end{center}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Managing coastal waters}}{\textbf{How do we use data?}}
 \emtxt{The good news}: We are getting better at monitoring - standardized, automated, increased coverage, real-time/continuous \\~\\
 \emtxt{The bad news}: Our ability to use these data for decision-making has not kept pace with availability! \\~\\
 <<theo, fig.height = 3.25, fig.width = 5, out.width = '0.55\\textwidth'>>=
@@ -186,8 +174,7 @@ legend('topleft', lty = c(2,1), lwd = c(2,2), legend= c('Data', 'Analysis tools'
 
 %%%%%%
 \begin{frame}{\textbf{Managing coastal waters}}{\textbf{How do we use data?}}
-We have the data but often lack appropriate tools to unambiguously and quantitatively characterize trends \\~\\
-\emtxt{Challenge 1:} We must first define  `trend' - what does this mean in the context of our management objectives? \\~\\
+\emtxt{Challenge 1:} We have the data but often lack appropriate tools to unambiguously and quantitatively characterize trends \\~\\
 \emtxt{Challenge 2:} We must use tools that can leverage the descriptive capabilities of large datasets \\~\\
 Our research explores novel techniques to address these challenges:\\~\\
 \emtxt{Case 1:} Chlorophyll drivers in Tampa Bay \\~\\
@@ -244,7 +231,6 @@ dev.off()
 \begin{itemize}
 \item Four bay segments\\~\\
 \item Monthly wq data at 50 stations from 1974 to present \\~\\
-\item Longitudinal profile of nutrient load and salinity \\~\\
 \end{itemize}
 \vspace{0cm}\hspace*{15pt}\scalebox{0.7}{\hbox{\tiny Data from \cite{TBEP11}}}
 \end{column}
@@ -361,16 +347,6 @@ What affects our interpretation of chlorophyll response to nutrients?
 \label{fig:salmoyr}
 \end{figure}
 \captionsetup[subfloat]{position=top}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-Given the observed changes over time and the available data -- Can we... \\~\\
-\begin{itemize}
-\item ...provide a natural history of water quality that is temporally consistent with drivers of change (i.e., context for trend evaluation)?
-\item ...characterize changes in extreme events in addition to describing the mean response?  
-\item ...improve our understanding of the nutrient-response paradigm in estuaries?
-\end{itemize}
 \end{frame}
 
 %%%%%%
@@ -575,140 +551,6 @@ Results show temporally consistent trends over time
 \end{figure}
 \end{frame}
 
-<<hill, eval = T, echo = F, results = 'hide', cache = T>>=
-load('data/salwt_grd.RData')
-load('data/epc_est.RData')
-
-to.plo <- sal.grd
-labs <- c('January', 'February', 'March', 'April', 'May', 'June', 'July', 
-  'August', 'September', 'October', 'November', 'December')
-to.plo$month.name <- factor(to.plo$month.num, labels = labs)
-
-#min, max sal.ref vals to plot....
-lim.vals<- ddply(
-  epc.est, 
-  .variable = c('seg', 'month.num'), 
-  .fun = function(x){
-    Low <- quantile(x$sal.ref, 0.05)
-    High <- quantile(x$sal.ref, 0.95)
-    data.frame(Low, High)
-    }
-  )
-lim.vals$month.name <- factor(lim.vals$month.num, labels = labs)
-
-# months to sub
-month.sub <- 'July'
-to.plo <- to.plo[to.plo$month.name == month.sub, ]
-lim.vals <- lim.vals[lim.vals$month.name == month.sub, ]
-
-# constrain plots to quants
-to.plo <- merge(to.plo, lim.vals, by = c('seg'), all.x = T)
-sel.vec <- with(to.plo, 
-  sal.grid >= Low &
-  sal.grid <= High
-  )
-to.plo <- to.plo[sel.vec, ]
-
-to.plo <- to.plo[to.plo$seg == 'Hillsborough Bay', ]
-
-#y axis label for plots
-ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
-
-p1 <- ggplot(to.plo, aes(x = sal.grid, y = bt.md, group = dec.time, 
-    colour = dec.time)) + 
-  geom_line(size = 1) + 
-  facet_wrap(~seg, scales = 'free', ncol = 4) + 
-  scale_y_continuous(ylabs) +
-  scale_x_continuous(name=expression(italic(Sal[ff]))) +
-  theme_mine() +
-  theme(legend.position = 'bottom') +
-  scale_colour_gradientn('Year', colours = pal(5))
-
-pdf('fig/hill.pdf', width = 4, height =3.5, family = 'serif')
-print(p1)
-dev.off()
-@
-
-% %%%%%%
-% \begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-% Because the model is dynamic, we have parameters describing the relationship of chlorophyll with other factors specific to different time periods \\~\\
-% \begin{columns}[T]
-% \begin{column}{0.45\textwidth}
-% \centerline{\includegraphics[width = \textwidth]{fig/hill.pdf}}
-% \end{column}
-% \begin{column}{0.45\textwidth}
-% \begin{itemize}
-% \item Early period (blue) - point-sources
-% \item Late period (red) - non-point sources
-% \item Chlorophyll shows increasing response to freshwater input in recent years
-% \end{itemize}
-% \end{column}
-% \end{columns}
-% \end{frame}
-
-% figure used on title page
-<<title_fig2, echo = F, results = 'hide', message = F, cache = T>>=
-load('data/salwt_grd.RData')
-load('data/epc_est.RData')
-
-to.plo <- sal.grd
-labs <- c('January', 'February', 'March', 'April', 'May', 'June', 'July', 
-  'August', 'September', 'October', 'November', 'December')
-to.plo$month.name <- factor(to.plo$month.num, labels = labs)
-
-#min, max sal.ref vals to plot....
-lim.vals<- ddply(
-  epc.est, 
-  .variable = c('seg', 'month.num'), 
-  .fun = function(x){
-    Low <- quantile(x$sal.ref, 0.05)
-    High <- quantile(x$sal.ref, 0.95)
-    data.frame(Low, High)
-    }
-  )
-lim.vals$month.name <- factor(lim.vals$month.num, labels = labs)
-
-# months to sub
-month.sub <- 'July'
-to.plo <- to.plo[to.plo$month.name == month.sub, ]
-lim.vals <- lim.vals[lim.vals$month.name == month.sub, ]
-
-# constrain plots to quants
-to.plo <- merge(to.plo, lim.vals, by = c('seg'), all.x = T)
-sel.vec <- with(to.plo, 
-  sal.grid >= Low &
-  sal.grid <= High
-  )
-to.plo <- to.plo[sel.vec, ]
-
-#y axis label for plots
-ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
-
-p1 <- ggplot(to.plo, aes(x = sal.grid, y = bt.md, group = dec.time, 
-    colour = dec.time)) + 
-  geom_line(size = 1) + 
-  facet_wrap(~seg, scales = 'free', ncol = 4) + 
-  scale_y_continuous(ylabs) +
-  scale_x_continuous(name='Fraction of freshwater') +
-  theme_mine() +
-  theme(legend.position = 'bottom') +
-  scale_colour_gradientn('Year', colours = pal(5))
-
-pdf('fig/title_plo2.pdf', width = 9, height = 3, family = 'serif')
-print(p1)
-dev.off()
-@
-
-%%%%%%
-\begin{frame}{\textbf{Case 1: Tampa Bay}}{\textbf{Describing drivers of chlorophyll}}
-What does this mean for Tampa Bay and other Gulf Coast estuaries?\\~\\
-\begin{itemize}
-\item Predictions followed observed chlorophyll -- but increased clarity in the description
-\item More detailed evaluation of trends allows greater insight into drivers of change\\~\\
-\end{itemize}
-\centerline{\includegraphics[width = \textwidth]{fig/title_plo2.pdf}}
-\end{frame}
-
 \section{Case 2: Improving metabolism estimates}
 
 %%%%%%
@@ -839,23 +681,21 @@ print(p2)
 
 %%%%%%
 \begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
-\emtxt{Challenge 1:} We want to provide an accurate estimate of metabolism using DO time series to evaluate trends over time \\~\\
-\emtxt{Challenge 2:} DO time series may represent variation from physical and biological processes \\~\\
-The weighted regression approach could be used here...
+\emtxt{Challenge:} DO time series may represent variation from physical and biological processes \\~\\
+\emtxt{Solution:} The weighted regression approach could be used here...
 \vspace{0.15in}
 \begin{center}
-$\ln\left(Chl\right) = \beta_0 + \beta_1 Sal_{ff} + \beta_2 t + \beta_3 \sin\left(2\pi t\right) + \beta_4 \cos\left(2\pi t\right)$
+$\ln\left(Chl\right) = \beta_0 + \beta_1 Sal_{ff} + \beta_2 t $
 \end{center}
 \vspace{0.05in}
 \begin{center}
-$DO = \beta_0 + \beta_1 H + \beta_2 t + \beta_3 \sin\left(2\pi t\right) + \beta_4 \cos\left(2\pi t\right)$
+$DO = \beta_0 + \beta_1 H + \beta_2 t $
 \end{center}
 \end{frame}
 
 %%%%%%
 \begin{frame}{\textbf{Case 2: Improving estimates of metabolism}}{\textbf{Application to Gulf Coast estuaries}}
-System Wide Monitoring Program, initiated in 1995 to provide continuous data at over 300 stations in 28 US estuaries \\~\\
-\centerline{\includegraphics[width = 0.8\textwidth]{fig/NERRS_locations.png}}
+\centerline{\includegraphics[width = \textwidth]{fig/NERRS_locations.png}}
 \end{frame}
 
 <<dtd_ani, cache = T, eval = F, echo = F, results = 'hide'>>=
@@ -985,7 +825,6 @@ These needs are motivated by: \\~\\
 \item The continued relevance of stressors that influence ecosystem conditions \\~\\
 \item Our increasing ability to gather raw, uninterpreted data \\~\\
 \end{itemize}
-Our methods must include a clear definition of \emtxt{trend} in the context of drivers of change
 \end{frame}
 
 %%%%%%
