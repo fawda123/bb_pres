@@ -37,7 +37,10 @@ source('R/funcs.R')
 
 % custom colors
 <<cavalcanti, echo = F, results = 'asis', cache = T>>=
-pal <- wes.palette(name = 'Cavalcanti', type = 'continuous')
+pal <- function(n){
+  out <- wes_palette(n, name = 'Cavalcanti', type = 'continuous')
+  out[1:n]
+}
 num.cols <- 5
 
 for(i in 1:num.cols){
@@ -256,7 +259,10 @@ fill.dat<-data.frame(
   Median=fill.dat[,1]
 )
 tb.chl.gg<-merge(tb.chl,fill.dat,by.x=c('year','seg'))
-pal <- wes.palette(name = 'Cavalcanti', type = 'continuous')
+pal <- function(n){
+  out <- wes_palette(n, name = 'Cavalcanti', type = 'continuous')
+  out[1:n]
+}
 p1<-ggplot(tb.chl.gg,aes(x=year,y=Chla_ugl,fill=Median)) + 
   geom_boxplot(outlier.size=1,outlier.colour=alpha('black', 0.7),size=0.25) + 
   scale_y_continuous(ylabs,limits=c(0,50)) +
@@ -277,7 +283,10 @@ print(p1)
 <<salmoyr,include=F, cache = T>>=
 #changing trends by year, month, salinity
 
-pal <- wes.palette(name = 'Cavalcanti', type = 'continuous')
+pal <- function(n){
+  out <- wes_palette(n, name = 'Cavalcanti', type = 'continuous')
+  out[1:n]
+}
 
 load('data/epc_est.RData')
 
@@ -571,18 +580,11 @@ The `Odum' method assumes DO represents biological processes...
 <<sapdo, cache = T, fig.height = 2, fig.width = 7, out.width = '0.95\\textwidth', eval = T, echo = F, family = 'serif'>>=
 ######
 # SAPHD example
-
-load('data/case_grds.RData')
-casewins <- list(6, 1, 0.5)
-
-# subsets by case. date range, window comb
 case <- 'SAPDC'
 dat.rng<-as.Date(c('2012-02-01','2012-02-14')) 
-sel_vec <- with(case_grds, which(dec_time == casewins[[1]] & hour == casewins[[2]] & Tide == casewins[[3]]))
-sel_vec <- paste0(case, '_wtreg_', sel_vec, '.RData')
 
 load('data/SAPDC_wtreg_12.RData')
-inst_subs <- get(gsub('.RData', '', sel_vec))
+inst_subs <- get('SAPDC_wtreg_12')
 
 tzone <- attr(inst_subs$DateTimeStamp, 'tzone')
 
@@ -626,17 +628,12 @@ print(p1)
 ######
 # SAPHD example
 
-load('data/case_grds.RData')
-casewins <- list(6, 1, 0.5)
-
 # subsets by case. date range, window comb
 case <- 'SAPDC'
 dat.rng<-as.Date(c('2012-02-01','2012-02-14')) 
-sel_vec <- with(case_grds, which(dec_time == casewins[[1]] & hour == casewins[[2]] & Tide == casewins[[3]]))
-sel_vec <- paste0(case, '_wtreg_', sel_vec, '.RData')
 
 load('data/SAPDC_wtreg_12.RData')
-inst_subs <- get(gsub('.RData', '', sel_vec))
+inst_subs <- get('SAPDC_wtreg_12')
 
 tzone <- attr(inst_subs$DateTimeStamp, 'tzone')
 
